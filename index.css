@@ -1,0 +1,108 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+}
+
+.outer-shell {
+    margin-top: 10px;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    border: 5px solid black;
+    border-radius: 30px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.display-container {
+    height: 120px;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+#number-el {
+    margin-right: 25px;
+    text-align: right;
+    font-size: xxx-large;
+}
+
+#exponent-button { grid-area: exponent; }
+#parentheses-buttons {grid-area: paren; }
+#delete-button { grid-area: delete; }
+#clear-button { grid-area: clear; }
+#divide-button { grid-area: divide; }
+#multiply-button { grid-area: multiply; }
+#add-button { grid-area: add; border-bottom-right-radius: 25px; }
+#subtract-button { grid-area: subtract; }
+#equal-button { grid-area: equal; }
+#decimal-button { grid-area: decimal; }
+#zero-button { grid-area: zero; border-bottom-left-radius: 25px; }
+#one-button { grid-area: one; }
+#two-button { grid-area: two; }
+#three-button { grid-area: three; }
+#four-button { grid-area: four; }
+#five-button { grid-area: five; }
+#six-button { grid-area: six; }
+#seven-button { grid-area: seven; }
+#eight-button { grid-area: eight; }
+#nine-button { grid-area: nine; }
+
+.button-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'exponent paren delete clear'
+        'seven eight nine divide'
+        'four five six multiply'
+        'one two three subtract'
+        'zero decimal equal add';
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+button {
+    font-weight: bold;
+    font-size: xx-large;
+    border-color: lightgray;
+    margin: 3px;
+}
+
+.parentheses-buttons {
+    display: flex;
+}
+
+#open-paren-button {
+    width: 50%;
+}
+
+#close-paren-button {
+    width: 50%;
+}
+
+.non-numeric-button {
+    background-color: rgb(200, 202, 204);
+}
+
+.non-numeric-button:hover {
+    background-color: rgb(180, 182, 184);
+}
+
+.numeric-button {
+    background-color: rgb(218, 220, 224);
+}
+
+.numeric-button:hover {
+    background-color: rgb(198, 200, 204);
+}
+
+#equal-button {
+    background-color: rgb(81, 134, 236);
+}
+
+#equal-button:hover {
+    background-color: rgb(61, 114, 216);
+}

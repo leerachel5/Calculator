@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="outer-shell">
+        <div class="display-container">
+            <h1 id="number-el">0</h1>
+        </div>
+        <div class="button-container">
+            <button class="non-numeric-button" id="exponent-button" onclick="_calculatorFunctions.power()">^</button>
+            <div class="parentheses-buttons">
+                <button class="non-numeric-button" id="open-paren-button" onclick="_calculatorFunctions.openParenthesis()">(</button>
+                <button class="non-numeric-button" id="close-paren-button" onclick="_calculatorFunctions.closeParenthesis()">)</button>
+            </div>
+            <button class="non-numeric-button" id="delete-button" onclick="_calculatorFunctions.deleteDigit()">CE</button>
+            <button class="non-numeric-button" id="clear-button" onclick="_calculatorFunctions.clearDisplay()">AC</button>
+            <button class="non-numeric-button" id="divide-button" onclick="_calculatorFunctions.divide()">/</button>
+            <button class="non-numeric-button" id="multiply-button" onclick="_calculatorFunctions.multiply()">*</button>
+            <button class="non-numeric-button" id="subtract-button" onclick="_calculatorFunctions.subtract()">-</button>
+            <button class="non-numeric-button" id="add-button" onclick="_calculatorFunctions.add()">+</button>
+            <button class="non-numeric-button" id="equal-button" onclick="_calculatorFunctions.equals()">=</button>
+            <button class="numeric-button" id="decimal-button" onclick="_calculatorFunctions.decimal()">.</button>
+            <button class="numeric-button" id="zero-button" onclick="_calculatorFunctions.enterDigit(0)">0</button>
+            <button class="numeric-button" id="one-button" onclick="_calculatorFunctions.enterDigit(1)">1</button>
+            <button class="numeric-button" id="two-button" onclick="_calculatorFunctions.enterDigit(2)">2</button>
+            <button class="numeric-button" id="three-button" onclick="_calculatorFunctions.enterDigit(3)">3</button>
+            <button class="numeric-button" id="four-button" onclick="_calculatorFunctions.enterDigit(4)">4</button>
+            <button class="numeric-button" id="five-button" onclick="_calculatorFunctions.enterDigit(5)">5</button>
+            <button class="numeric-button" id="six-button" onclick="_calculatorFunctions.enterDigit(6)">6</button>
+            <button class="numeric-button" id="seven-button" onclick="_calculatorFunctions.enterDigit(7)">7</button>
+            <button class="numeric-button" id="eight-button" onclick="_calculatorFunctions.enterDigit(8)">8</button>
+            <button class="numeric-button" id="nine-button" onclick="_calculatorFunctions.enterDigit(9)">9</button>
+        </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
